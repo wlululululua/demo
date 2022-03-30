@@ -1,0 +1,120 @@
+:root {
+    --bgcolor-one: #623c79;
+    --bgcolor-two: #af6ec3;
+    --bgcolor-three: #ebc7f8;
+    --bgcolor-four: #fef5ff;
+    --bgcolor-five: #331f49;
+    --txtcolor-one: #fff;
+    --txtcolor-two: #797979;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bgcolor-two);
+}
+
+.notes {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    height: 100vh;
+}
+
+/* note sidebar */
+.notes__sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.notes__add {
+    width: 90%;
+    margin: 1em auto;
+    padding: 0.75em 0;
+    font-size: 1.25em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    color: var(--txtcolor-one);
+    background-color: var(--bgcolor-one);
+    cursor: pointer;
+}
+
+.notes__add:hover {
+    background-color: var(--bgcolor-three);
+    color: var(--txtcolor-two);
+}
+
+.notes__list-item {
+    width: 90%;
+    margin: 1em auto;
+    border: 3px solid var(--bgcolor-three);
+    background-color: var(--bgcolor-three);
+    color: var(--txtcolor-two);
+    cursor: pointer;
+}
+
+.notes__list-item--selected {
+    background-color: var(--bgcolor-five);
+    color: var(--txtcolor-one);
+    border-radius: 7px;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.notes__list-item--selected .notes__small-title {
+    border-bottom: 2px dashed var(--bgcolor-four);
+}
+
+.notes__small-title,
+.notes__small-updated {
+    padding: 0.8em;
+}
+
+.notes__small-title {
+    border-bottom: 2px dashed var(--bgcolor-five);
+}
+
+.notes__small-body {
+    max-height: 150px;
+    padding: 0.5em;
+    overflow: hidden;
+}
+
+.notes__small-updated {
+    font-size: 0.7em;
+    text-align: right;
+    color: #aaa;
+}
+
+/* note preview */
+.notes__preview {
+    display: flex;
+    flex-direction: column;
+}
+
+.notes__title,
+.notes__body {
+    width: 90%;
+    margin: 1em auto;
+    border: none;
+    outline: none;
+    background-color: var(--bgcolor-four);
+    color: var(--txtcolor-two);
+    border: 5px solid var(--bgcolor-one);
+}
+
+.notes__title {
+    padding: 0.3em;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.notes__body {
+    flex-grow: 1;
+    padding: 1em;
+    line-height: 1.5;
+    font-size: 1.6em;
+    resize: none;
+}
