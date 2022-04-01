@@ -1,0 +1,69 @@
+:root {
+    --bgcolor-one: #623c79;
+    --bgcolor-two: #af6ec3;
+    --bgcolor-three: #ebc7f8;
+    --bgcolor-four: #fef5ff;
+    --bgcolor-five: #331f49;
+    --txtcolor-one: #fff;
+    --txtcolor-two: #797979;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bgcolor-three);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    padding: 20px;
+}
+
+.large-area {
+    height: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: monospace, sans-serif;
+    color: var(--txtcolor-one);
+    background-color: var(--bgcolor-two);
+    border-radius: 10px;
+    border: 5px solid var(--bgcolor-one);
+    outline: none;
+    resize: none;
+    transition: all 0.3s ease-out;
+}
+
+.large-area::placeholder {
+    color: var(--txtcolor-one);
+}
+
+.large-area:hover,
+.large-area:focus {
+    background-color: var(--bgcolor-four);
+    border: 5px solid var(--bgcolor-two);
+    color: var(--txtcolor-two);
+}
+
+.controls__button {
+    width: 100%;
+    padding: 8px 14px;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: var(--txtcolor-one);
+    background-color: var(--bgcolor-two);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.controls__button:active {
+    background-color: var(--bgcolor-one);
+}

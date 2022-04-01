@@ -1,11 +1,13 @@
-# 前端练手demo合集
+## 关于仓库
+✍️记录一些练手demo，大部分是网上🏄‍♀️跟练的别人的，觉得好的demo都会学习一下并记录下来，learn from others❤️ 🙇‍♀️
+
 ## demo todo
 - [x] notes-app
 - [x] sticky-notes
+- [x] json-formatter
 - [ ] kanban
 - [ ] keyboard
 
---- 
 
 ## demo简介
 ### notes-app
@@ -21,3 +23,10 @@
 | 在线演示 | [sticky-notes](https://wlululululua.github.io/demo/sticky-notes/) | 
 | :---: | :---: | 
 | **learn from** | [dcode: How to Build a Sticky Notes App using JavaScript (Beginner's Project))](https://www.youtube.com/watch?v=Efo7nIUF2JY) 
+
+### json-formatter
+>🥕碎碎念：learn json
+
+| 在线演示 | [json-formatter](https://wlululululua.github.io/demo/json-formatter/) | 
+| :---: | :---: | 
+| **learn from** | [dcode: Create Your Own JSON Formatter with JavaScript (Prettify/Minify)](https://www.youtube.com/watch?v=s38oGpnnQo8&t=41s) 
